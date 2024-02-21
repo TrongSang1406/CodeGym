@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- html: dựng khung trang web
+         css: làm đẹp trang web
+        javascript: làm cho trang web có thể tương tác với người dùng: ấn nút, nhập, ... -->
+    <button onclick="alert(1)">A</button>
+    <br>
+    <!-- Tư duy lập trình:
+        1. Nhập xuất
+        2. Biến, kiểu dữ liệu, toán tử: + - * /
+        3. Điều kiện
+        4. Vòng lặp
+        5. Mảng
+        6. Hàm
+     -->
+     <script>
+        // Nhập xuất: Làm thế nào đó chúng ta in ra chuỗi ra màn hình và nhập vào 1 chuỗi .... CỘNG CHUỖI!!
+        // Xuất: in ra 1 cái gì đó với ngôn ngữ lập trình
+        alert("Hello world");
+        document.write("Hello mn!");
+        document.write("<h1>Hiii</h1>");
+        console.log("Hello mn");
+        // Nhập: nhập từ màn hình
+        // Kiểu dữ liệu: số , chữ.
+        let a = +prompt("Mời bạn nhập")
+        a = a + 10;
+        alert(a);
+        // Toán tử: + - * /
+        // Toán tử số học: + - * / % (mod, ví dụ ; 32 % 6 = 2)
+        // Toán tử gán: =, +=, *=, /=, %=, -=
+        // Toán tử so sánh: ==, !=, >, <, >=, <=, ===
+          let a= 5; // number
+          let b= '5'; // string: chuỗi
+          let c= a+b; // string
+          let d= a>=10; // boolean (true/false)
+        // Toán tử logic:!,&&, ||, &, |
+        // a=10 ; a==10 = true nếu !(a==10) = false
+        // d = true, e = false => f = e & d = false
+        // d = true, e = true => f = e & d = true
+        // d = true, e = false => f = e \ d = true
+
+        // Nhân chia trước , cộng trừ sau, ưu tiên ngoặc, từ trái qua phải
+        // Nhân, chia, trừ: tính toán như thường ("2"*3=> 6, '2'*'3'=> 6)
+        // 1+2 => 3
+        // '1'+'2'=> '12'
+        // '1'+'2'=> '12'
+        // '1'+2+3=> '12'+3=>'123'
+        alert("1" + 2 + 3);
+
+     </script>
+
+</body>
+</html>

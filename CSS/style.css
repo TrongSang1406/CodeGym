@@ -1,0 +1,29 @@
+h3{
+    color: aqua;
+}
+.a{
+    color: blue;
+}
+.b{
+    color: blueviolet;
+}
+.c{
+    color: orange;
+}
+.x{
+    border: 5px dotted orange;
+    margin: 5px;
+    padding: 20px;
+}
+.y{
+    border: 10px dotted orange;
+    margin: 40px;
+    padding: 10px;
+}
+.z{          
+        padding: 20px;
+        border: 10px  brown;
+        border-style: dashed;
+        background-color: pink;
+        width: 200px;
+}
