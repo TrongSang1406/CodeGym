@@ -11,9 +11,12 @@
         // Vòng lặp => Giúp thực hiện các công việc lặp lại 1 cách ngắn gọn
         let a = +prompt('Nhập a');
         let b = +prompt('Nhập b');
+        let dem = a
         while (a <=b ) {
-            document.write(a +"<br>");
-            a++;
+            if((a % 2) == 0){ 
+                document.write(dem+ "<h1>");
+            }
+            dem++;
         }
     </script>
 </body>
