@@ -9,15 +9,13 @@
     <script>
         // In 1000 dòng "hello" ra màn hình với  Document.write()
         // Vòng lặp => Giúp thực hiện các công việc lặp lại 1 cách ngắn gọn
-        let a = +prompt('Nhập a');
-        let b = +prompt('Nhập b');
-        for (let c = a;c <= b ; c++) {
-            if (c % 2 == 0) {
-                document.write("<h1>" + c + "<h1>");
-            } else{ 
-                document.write("<h2>" + c + "<h2>");
+        let a = +prompt('Nhập a: ');
+        let b = +prompt('Nhập b: ');
+        let c = +prompt('Nhập c: ');
+        for (let i = a;i <=b; i++) {
+            if (i % 2 ==0 && i > c) {
+                document.write(i + "<br>");
             }
-
         }
     </script>
 </body>
