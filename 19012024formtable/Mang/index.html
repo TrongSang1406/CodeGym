@@ -7,14 +7,15 @@
 </head>
 <body>
     <script>
-        let xyz = [3, 34, 25, 23, 12, 15, 30];
-        let sum = 0
-        for(let i =0; i < xyz.length; i++) {
-           if (xyz[i] > 20) {
-            sum += xyz[i];
-           }
+        let xyz = [3, 34, 25, 23, 12, 15, 30, 50];
+        let A = xyz[0];
+        for (let i = 0; i < xyz.length; i++) {
+            if(A < xyz[i]) {
+                A = xyz[i];
+            }
+            
         }
-        document.write(sum);
+        document.write(A);
     </script>
 </body>
 </html>
