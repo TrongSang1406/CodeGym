@@ -7,10 +7,19 @@
 </head>
 <body>
     <script>
-        let xyz = [3, 4, 5, 23, 1,"Haha"];
-        alert(xyz[0]);
+        let xyz = [3, 34, 25, 23, 12, 15, 30];
         for(let i =0; i < xyz.length; i++) {
-            document.write(xyz[i] + "  ");
+           if (xyz[i] % 2 == 0) {
+            document.write("<p>" + xyz[i] + "</p>");
+           }
+           if (xyz[i] % 2 != 0) {
+            document.write("<h1>" + xyz[i] + "</h1>");
+           }
+        }
+        for (let i = 0; i<xyz.length; i++) {
+            if (i % 2 == 0) {
+                document.write(xyz[i] + "  ");
+            }
         }
     </script>
 </body>
