@@ -8,19 +8,13 @@
 <body>
     <script>
         let xyz = [3, 34, 25, 23, 12, 15, 30];
+        let sum = 0
         for(let i =0; i < xyz.length; i++) {
-           if (xyz[i] % 2 == 0) {
-            document.write("<p>" + xyz[i] + "</p>");
-           }
-           if (xyz[i] % 2 != 0) {
-            document.write("<h1>" + xyz[i] + "</h1>");
+           if (xyz[i] > 20) {
+            sum += xyz[i];
            }
         }
-        for (let i = 0; i<xyz.length; i++) {
-            if (i % 2 == 0) {
-                document.write(xyz[i] + "  ");
-            }
-        }
+        document.write(sum);
     </script>
 </body>
 </html>
