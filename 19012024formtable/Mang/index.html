@@ -12,14 +12,15 @@
             [7, 6, 29],
             [55, 3, 9, 42],
         ];
-        for (let i = 0; i < arr.length; i++) {
+        let tong = 0;
+         for (let i = 0; i < arr.length; i++) {
             for (let j = 0; j < arr[i].length; j++) {
-                if ( arr[i][j] > 10) {
-                    document.write(arr[i][j] + "  ");
-                }
-            }
-            document.write("<br>");
-        }
+                if (arr[i][j] % 2 == 0) {
+                    tong += arr[i][j];
+                }                
+            }            
+         }
+         document.write(tong);
     </script>
 </body>
 </html>
