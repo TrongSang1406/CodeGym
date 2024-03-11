@@ -8,6 +8,13 @@
 <body>
     <script>
         let arr = [23, 12, 43, 4, 5, 12];
+        let A = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if(A < arr[i]) {
+                A = arr[i];
+            }
+            
+        }
         arr[2] = 10;
         let max = arr[0];
         for (let i = 0; i < arr.length; i++) {
@@ -16,7 +23,16 @@
             }
             
         }
-        document.write("Max là" + "  " + max);
+        let max2 = -999;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max2 && arr[i] < max) {
+                max2 = arr[i];
+            }
+            
+        }
+        document.write("Max là" + "  " + A + "<br>")
+        document.write("Max 2 là" + "  " + max + "<br>")
+        document.write("Max 3 là" + "  " + max2 + "<br>")
     </script>
 </body>
 </html>
