@@ -11,15 +11,15 @@
             [1, 22, 3, 5,],
             [7, 6, 29, 22],
             [55, 3, 9, 42],
-            [5, 13, 19, 41],
+            [15, 13, 19, 41],
         ];
         let tong = 0
         for (let i = 0; i < arr.length; i++) {
           for (let j = 0; j < arr[i].length; j++) {
-            if (i == j) {
-                tong += arr[i][j];
-            }
-        }    
+            if (i + j == arr.length - 1) {
+                tong += arr[i][j]
+            }           
+        }
     }
     document.write(tong);
     </script>
