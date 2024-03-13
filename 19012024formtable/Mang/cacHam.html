@@ -7,16 +7,15 @@
 </head>
 <body>
     <script>
-        let a = [1, 2, 3, 5];
-        alert("trước : " + "  " + a);
-        let b= a.indexOf(5);
-        alert("Tìm vị trí : " + "  " + b)
-        a.push(10);
-        alert("thêm :" + "  " + a);
-        a[2] = 100;
-        alert("Sửa :" + "  " + a);
-        a.splice(2,1);
-        alert("Xóa :" + "  " + a);
+        let arr = [];
+        let x;
+        for (let i = 0; x != -1 ; i++) {
+            x = +prompt("Nhập vào phần tử thứ " + i);
+            arr.push(x);
+        }
+        for (let i = 0 ; i < arr.length; i++) {
+            document.write(arr[i] + "<br>");
+        }
     </script>
 </body>
 </html>
