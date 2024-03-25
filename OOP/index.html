@@ -19,19 +19,25 @@
             age: 18,
             ispoor: true,
             address: "TN",
+        f1: function () {
+            alert("haha");
+        },
+    };
+    a.f1();
+    class Student {
+        constructor(name, age, score) {
+            this.name = name;
+            this.age = age;
+            this.score = score;
         }
-        let list = [
-            {
-                name: 'iphone',
-                price: 200
-            },
-            {
-                name: "Samgsung",
-                price: 300,
-            },
-        ];
-        alert(a["name"]);
-        alert(a.address);
+        f2() {
+            alert(this.name + ",  " + this.age + ",  " + this.score);
+        }
+    }
+    let s1 = new Student("ABC", 20, 10);
+    let s2 = new Student("CDEF", 20, 8);
+    s1.f2();
+    s2.f2();
 
     </script>
 </body>
