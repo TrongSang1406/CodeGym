@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+</style>
+<body style="color: red;">
+    <div style="display: flex;">
+        <div id="main" style="width: 52%; height: 550px; background-image: url(https://static.wikia.nocookie.net/ai-la-trieu-phu/images/7/7c/Logo_of_Ai_la_trieu_phu_2015.png/revision/latest/scale-to-width-down/1000?cb=20200408135519&path-prefix=vi);"><center><h1></h1></center></div>
+        <div style="height: 500px; width: 10%;">
+          <h1 id="counter"></h1>
+          <table><tr><td>Điểm của bạn là:</td><td id="point"></td></tr></table>
+          <div id="xxx"><button onclick="start()">Bắt đầu</button></div>
+       </div>
+      </div>
+       <script>
+           var stop = 1;
+           let a = 0;
+           let  point = 1;
+
+             function dung() {
+               alert('Đáp án của bạn đã Đúng và bạn được cộng điểm');
+               document.getElementById('point').innerHTML = point++;
+               stop = 2;
+               next();
+             }
+
+             function sai() {
+               alert('Đáp án của bạn đã Sai và trò chơi kết thúc !');
+
+             }
+
+            function next() {
+                a++;
+                console.log(a);
+                cauhoi(a);
+                stop = 1;
+            }
+
+            function start() {
+                next();
+                document.getElementById('xxx').innerHTML = '';
+            }
+
+            function cauhoi(a) {
+   
+                 if (a == 1) {
+                   clock();
+                   let str = "Câu hỏi số 1: Đâu là tên một tên truyện cổ tích nổi tiếng? ";
+                   str += "<table><tr><td><button onclick='dung()'>A. Chú mèo đi hia<button><td><td><button onclick='sai()'>B. Chú mèo đi bốt<button><td><tr><tr><td><button onclick='sai()'>C. Chú mèo đi sục<button><td><td><button onclick='sai()'>D. Chú mèo đi tông<button><td><tr><table>";
+                   document.getElementById('main').innerHTML = str;
+                }
+   
+                if (a == 2) {
+                   clock();
+                   let str = "Câu hỏi số 2: Đâu là tên 1 loại mũ";
+                   str += "<table><tr><td><button onclick='sai()'>A. Lưỡi liềm<button><td><td><button onclick='dung()'>B. Lưỡi trai<button><td><tr><tr><td><button onclick='sai()'>C. Lưỡi rắn<button><td><td><button onclick='sai()'>D. Lưỡi hái<button><td><tr><table>";
+                   document.getElementById('main').innerHTML = str;
+                }
+   
+                if (a == 3) {
+                    clock();
+                    let str = "Câu hỏi số 3: Sóng biển được tạo ra từ đâu?";
+                    str += "<table><tr><td><button onclick='dung()'>A. Gió<button><td><td><button onclick='sai()'>B. Nắng<button><td><tr><tr><td><button onclick='sai()'>C. Mưa<button><td><td><button onclick='sai()'>D. Sương mù<button><td><tr><table>";
+                    document.getElementById('main').innerHTML = str;
+                }
+   
+                if (a == 4) {
+                    clock();
+                    let str = "Câu hỏi số 4: Đâu là một hợp kim của Nhôm?";
+                    str += "<table><tr><td><button onclick='sai()'>A. Ferit<button><td><td><button onclick='sai()'>B. Alkanoid<button><td><tr><tr><td><button onclick='sai()'>C. Alumin<button><td><td><button onclick='dung()'>D. Đuyra<button><td><tr><table>";
+                    document.getElementById('main').innerHTML = str;
+                }
+   
+               if (a == 5) {
+                    clock();
+                    let str = "Câu hỏi số 5: Tháng âm lịch nào còn được gọi là tháng cô hồn";
+                    str += "<table><tr><td><button onclick='dung()'>A. Tháng Bảy<button><td><td><button onclick='sai()'>B. Tháng Chạp<button><td><tr><tr><td><button onclick='sai()'>C. Tháng Tám<button><td><td><button onclick='sai()'>D. Tháng Giêng<button><td><tr><table>";
+                    document.getElementById('main').innerHTML = str;
+                }
+   
+                if (a == 6) {
+                    clock();
+                    let str = "Câu hỏi số 6: Có câu thành ngữ: Đi mây về ... gì?";
+                    str += "<table><tr><td><button onclick='sai()'>A. Biển<button><td><td><button onclick='sai()'>B. Núi<button><td><tr><tr><td><button onclick='sai()'>C. Mây<button><td><td><button onclick='dung()'>D. Gió<button><td><tr><table>";
+                    document.getElementById('main').innerHTML = str;
+               }
+                
+                if (a == 7) {
+                    clock();
+                    let str = "Câu hỏi số 7: Ếch thuộc nhóm động vật nào?";
+                    str += "<table><tr><td><button onclick='sai()'>A. Động vật đẻ con<button><td><td><button onclick='dung()'>B. Động vật lưỡng cư<button><td><tr><tr><td><button onclick='sai()'>C. Đông vật thú nhún<button><td><td><button onclick='sai()'>D. Động vật ăn tạp<button><td><tr><table>";
+                    document.getElementById('main').innerHTML = str;
+                }
+   
+             
+                if (a == 8) {
+                    clock();
+                    let str = "Câu hỏi số 8: Đâu là tên một loại đồ chơi dân gian của trẻ em?";
+                    str += "<table><tr><td><button onclick='dung()'>A. Tò he <button><td><td><button onclick='sai()'>B. Tò mò<button><td><tr><tr><td><button onclick='sai()'>C. Tò vò<button><td><td><button onclick='sai()'>D. Tến tò<button><td><tr><table>";
+                    document.getElementById('main').innerHTML = str;
+                }
+   
+             
+                if (a == 9) {
+                clock();
+                    let str = "Câu hỏi số 9: Loại cá nào bé nhất?";
+                    str += "<table><tr><td><button onclick='sai()'>A. Cá heo <button><td><td><button onclick='dung()'>B. Cá bống<button><td><tr><tr><td><button onclick='dung()'>C. Cá mập<button><td><td><button onclick='sai()'>D. Cá chà bặc<button><td><tr><table>";
+                    document.getElementById('main').innerHTML = str;
+                }
+   
+                if (a == 10) {
+                    clock();
+                   let str = "Câu hỏi số 10: Cướp biển còn được gọi với tên khác là gì?";
+                   str += "<table><tr><td><button onclick='sai()'>A. Đạo tặc<button><td><td><button onclick='dung()'>B. Hải tặc<button><td><tr><tr><td><button onclick='sai()'>C. Tin tặc<button><td><td><button onclick='sai()'>D. Lâm tặc<button><td><tr><table>";
+                   document.getElementById('main').innerHTML = str;
+                }
+
+                if (a == 11) {
+                    alert('Bạn đã hoàn thành trò chơi !!!');
+                }
+            }
+
+             function clock() {
+                 let timeLeft = 40;
+                 const countdownElement = document.getElementById('counter');
+                 const stopButton = document.getElementById('stopButton');
+
+                 const intervalId = setInterval(() => {
+                 timeLeft -= 1;
+                 countdownElement.textContent = timeLeft;
+       
+                 if (stop == 2) {
+                    clearInterval(intervalId);
+                 }
+
+                 if (timeLeft <= 0) {
+                   clearInterval(intervalId);
+                   alert('Game end');
+                }
+                 }, 1000);
+            }
+       </script>
+</body>
+</html>
